@@ -10,30 +10,42 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    {% for nav in site.data.navigation %}
-                        {% if page.url == nav.url %}
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{nav.url}}">{{nav.title}}</span></a>
-                        </li>
-                        {% else %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{nav.url}}">{{nav.title}}</span></a>
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="/images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        {% for nav in site.data.navigation %}
+                            {% if page.url == nav.url %}
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{nav.url}}">{{nav.title}}</span></a>
+                            </li>
+                            {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{nav.url}}">{{nav.title}}</span></a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container title">
+            <div class="hero">
+                <h1 class="jumbotron-heading">We design and develop</h1>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam debitis maxime doloremque libero maiores modi fugiat, eos </p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                </p>
             </div>
         </div>
-    </nav>
+    </section>
+    
     {{ content }}
 </body>
 
