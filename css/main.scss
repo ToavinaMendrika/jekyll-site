@@ -14,16 +14,47 @@
     -ms-user-select: none;
     user-select: none;
 }
+.navbar{
+    background-color:transparent;
+}
 
+.header, .title{
+    height: 592px;  
+}
+.header{
+    background-image: url("/images/bg-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header .title{
+    position: relative;
+}
+li.active .nav-link{
+    color: $primary !important;  
+}
+.hero{
+    position: absolute;
+    width: 481px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-70%);
+}
+.nav-link{
+    text-transform: uppercase;
+}
+
+.section-about {
+    padding: 100px 277px;
+}
+.section {
+    margin-bottom: 128px;
+}
+.skill {
+    padding: 28px 0;
+}
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
-    }
-}
-.jumbotron {
-    color: #ffffff;
-    border-radius: 0;
-    p{
-        color: #ffffff !important;
     }
 }

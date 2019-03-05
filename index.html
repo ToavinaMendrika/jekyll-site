@@ -3,21 +3,43 @@ layout: default
 title: Home
 ---
 <main role="main">
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Album example</h1>
-            <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-            <p>
-                <a href="#" class="btn btn-warning my-2">Main call to action</a>
-                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-            </p>
+
+
+    <section class="section-about">
+        <div class="container text-center">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur, expedita ab, repudiandae, corporis voluptates dolorum iste quasi labore esse repellat reiciendis quis architecto obcaecati ullam accusantium at adipisci vel?Facilis fugiat optio deleniti ullam adipisci inventore earum neque, perspiciatis blanditiis vero id soluta dolore repellendus, doloremque eligendi ratione</p>
+            <p><img src="/images/signature.png" alt=""></p>
         </div>
     </section>
 
-    <div class="album py-5 bg-light">
+    <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 skill">
+                        <h2>Proffessional Skills</h2>
+                        <p>UX/UI</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div><br>
+                        <p>Web development</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div><br>
+                        <p>Marketing</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img class="img-fluid" src="/images/skill.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="album py-5 bg-light">
         <div class="container">
-
+            <h2 class="text-center">Blog</h2>
             <div class="row">
                 {% for post in site.posts %}
                 <div class="col-md-4">
@@ -43,7 +65,7 @@ title: Home
 
             </div>
         </div>
-    </div>
+    </section>
 </main>
 
 <footer class="text-muted">
